@@ -1,4 +1,4 @@
-# Task Manager API
+# Task API
 
 Асинхронный REST API пет проект на FastAPI для управления задачами и пользователями.  
 
