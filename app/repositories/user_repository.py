@@ -2,7 +2,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.models.user import User
 from app.schemas.user import UserCreate, UserUpdate  
-from app.logger import simple_logger, get_logger
+from app.utils.logger import simple_logger, get_logger
 from fastapi import Depends
 import logging
 

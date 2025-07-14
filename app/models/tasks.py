@@ -1,6 +1,6 @@
 from sqlalchemy import ForeignKey, String, Boolean, Integer
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.db import Base
+from app.infrastructure.db import Base
 
 
 class Task(Base):

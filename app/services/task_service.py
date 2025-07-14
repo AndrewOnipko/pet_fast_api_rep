@@ -1,9 +1,9 @@
 from fastapi import Depends
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.db import get_async_session
+from app.infrastructure.db import get_async_session
 from app.repositories.task_repository import TaskRepository
 from app.schemas.tasks import TaskCreate, TaskUpdate, TaskRead
-from app.logger import simple_logger, get_logger
+from app.utils.logger import simple_logger, get_logger
 import logging
 
 class TaskService:
