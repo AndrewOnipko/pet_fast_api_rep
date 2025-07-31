@@ -10,12 +10,10 @@ async def lifespan(app: FastAPI):
     yield 
     await engine.dispose()
     
-app = FastAPI(
-    title="Task Manager API",
-    description="REST API pet project",
-    version="1.0.0",
-    lifespan=lifespan
-)
+app = FastAPI(title="Task Manager API",
+            description="REST API pet project",
+            version="1.0.0",
+            lifespan=lifespan)
 
 app.include_router(users.router, prefix="/users", tags=["Users"])
 app.include_router(tasks.router, prefix="/tasks", tags=["Tasks"])
