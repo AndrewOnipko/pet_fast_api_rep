@@ -17,6 +17,4 @@ class TaskRead(TaskBase):
     id: int
     user_id: int
 
-    model_config = {
-        "from_attributes": True
-    }
+    model_config = {"from_attributes": True}
